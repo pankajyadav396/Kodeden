@@ -11,12 +11,22 @@ import { Footer } from './components/Footer';
 import { useState, useEffect } from 'react';
 import logo from './assets/images/png/logo.png'
 import Backtotop from './components/Backtotop';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 function App() {
   const [loader, setloader] = useState(true)
   useEffect(() => {
     setTimeout(() => {
       setloader(false)
     }, 2000);
+  }, [])
+
+
+  useEffect(() => {
+    Aos.init({
+      once: true,
+      duration: 1500,
+    })
   }, [])
 
   return (
@@ -27,7 +37,7 @@ function App() {
       </div >) : (
         <div className=' position-relative overflow-xclip'>
           <Backtotop />
-          < Hero />
+          <Hero />
           <Section2 />
           <Section3 />
           <Section4 />
@@ -37,8 +47,6 @@ function App() {
           <Footer />
         </div>
       )}
-
-      ""
     </>
   )
 }

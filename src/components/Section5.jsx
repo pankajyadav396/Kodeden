@@ -48,9 +48,9 @@ const Section5 = () => {
     ]
 
     return (
-        <div className="mt-xl-5 pt-lg-5 pt-3 px-3">
+        <div className="mt-xl-5 pt-lg-5 pt-3 px-3" id="choose">
             <div className="container p-0 max-w-1140 mt-lg-5 pt-md-5 position-relative">
-                <h2 className="color-lightwhite mt-4 fs-2xl fw-medium text-center text-uppercase  lh-xl1 m-0 pb-5">
+                <h2 data-aos="fade-up" className="color-lightwhite mt-4 fs-2xl fw-medium text-center text-uppercase  lh-xl1 m-0 pb-5">
                     What our <span className="color-gradient">students</span> are saying
                 </h2>
                 <Swiper
@@ -74,7 +74,7 @@ const Section5 = () => {
                 >
                     {array1.map((even, index) => {
                         return (
-                            <SwiperSlide className={`${index == 2 ? " px-3" : ""} && ${index == 1 ? " px-xxl-2" : ""} && ${index == 0 ? " px-xl-1 ps=xxl-2" : ""}  slider-card`} >
+                            <SwiperSlide data-aos="fade-up" className={`${index == 2 ? " px-3" : ""} && ${index == 1 ? " px-xxl-2" : ""} && ${index == 0 ? " px-xl-1 ps=xxl-2" : ""}  slider-card`} >
                                 <h4 className=" m-0 fw-normal fs-md3 lh-36 text-ellipsis ff-jost color-white">
                                     {even.title}
                                 </h4>

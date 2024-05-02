@@ -27,7 +27,7 @@ const Section3 = () => {
     ]
     return (
         <>
-            <div className=' pt-xl-5 mt-lg-5'>
+            <div className=' pt-xl-5 mt-lg-5' id='services'>
                 <div className='pt-5 container max-w-1140 position-relative'>
                     <img src={arrow} alt="img" className=' position-absolute arrow3 d-none d-lg-block' />
                     <h2 className=' color-lightwhite mt-xl-5 fs-2xl fw-medium ff-jost text-center lh-68'>“From Confused to Coder”: Kodeden's <span className=' d-lg-block'></span> Exclusive 6-Month <span className=' color-gradient'> Software Engineering  </span>Course </h2>
@@ -37,7 +37,7 @@ const Section3 = () => {
                         <div className=' row'>
                             {array.map((e, index) => {
                                 return (
-                                    <div className={`${index == 2 ? "mt-4 mt-lg-0" : ""} && ${index == 1 ? "mt-4 mt-sm-0" : ""} col-lg-4 col-sm-6 col-12`}>
+                                    <div data-aos="fade-up" className={`${index == 2 ? "mt-4 mt-lg-0" : ""} && ${index == 1 ? "mt-4 mt-sm-0" : ""} col-lg-4 col-sm-6 col-12`}>
                                         <div className='box-gold justify-content-end d-flex flex-column position-relative pb-3'>
                                             <p className=' fs-lg ff-jost m-0 fw-semibold color-grey'>{e.title}</p>
                                             <p className=' fs-md color-lightwhite m-0 ff-jost fw-bold'>{e.para}</p>

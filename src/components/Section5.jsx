@@ -48,7 +48,7 @@ const Section5 = () => {
     ]
 
     return (
-        <div className="mt-lg-5 pt-lg-5 pt-3 px-3">
+        <div className="mt-xl-5 pt-lg-5 pt-3 px-3">
             <div className="container p-0 max-w-1140 mt-lg-5 pt-md-5 position-relative">
                 <h2 className="color-lightwhite mt-4 fs-2xl fw-medium text-center text-uppercase  lh-xl1 m-0 pb-5">
                     What our <span className="color-gradient">students</span> are saying

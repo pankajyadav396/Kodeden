@@ -1,12 +1,13 @@
 import React from 'react'
 import Commonbtn from '../common/Commonbtn'
 import img from '../assets/images/png/logo.png'
-
+import ellipse from '../assets/images/png/arrowellipse2.png'
 const Section6 = () => {
     return (
         <>
-            <div className=' mt-5 pt-5'>
-                <div className=' container max-w-1140 mt-md-5 pt-lg-5'>
+            <div className=' mt-xl-5 pt-5'>
+                <div className=' container max-w-1140 mt-md-5 pt-lg-5 position-relative'>
+                    <img src={ellipse} alt="img" className=' position-absolute arrow4 d-none d-md-block' />
                     <div className=' row align-items-center justify-content-around flex-column-reverse flex-md-row'>
                         <div className="col-md-6">
                             <h2 className=' color-lightwhite fs-2xl fw-medium ff-jost lh-68 text-center text-md-start'>Our Guarantee</h2>

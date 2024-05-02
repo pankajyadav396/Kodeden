@@ -1,10 +1,12 @@
 import img from '../assets/images/png/2man.png'
 import Commonbtn from '../common/Commonbtn'
+import arrow from '../assets/images/png/arrowellipse3.png'
 const Section7 = () => {
     return (
         <>
-            <div className=' my-5 pt-5 pb-lg-5'>
-                <div className=' container mt-lg-5 pt-md-5 max-w-1140'>
+            <div className=' mt-xl-5 mb-5 pt-5 pb-lg-5'>
+                <div className=' container mt-lg-5 pt-md-5 max-w-1140 position-relative'>
+<img src={arrow} alt="img" className=' position-absolute end-0 bottom-0 d-none d-md-block' />
                     <h2 className=' color-lightwhite fs-2xl fw-medium ff-jost lh-68 text-center'>Who Are <span className=' color-gradient'>We</span>?</h2>
                     <div className=' row mt-5 pt-3 justify-content-between align-items-center'>
                         <div className="col-lg-5 col-md-6 col-sm-10 mx-auto">

@@ -222,7 +222,13 @@ body {
 }
 
 .box-absolute {
-    max-width: 180px;
+    top: 32%;
+    transition: all .3s;
+    left: -30px !important;
+}
+
+.box-absolute:hover {
+    left: 0 !important;
 }
 
 .max-w-1140 {
@@ -279,9 +285,14 @@ body {
 
 /* ==============================================section3=========================================== */
 .box-gold {
+    transition: all .3s;
     padding-left: 13px;
     min-height: 223px;
     border: 1px solid #E4E4E4;
+}
+
+.box-gold:hover {
+    box-shadow: 0px 0px 16px 1px var(--color-white);
 }
 
 .max-w-941 {
@@ -337,8 +348,22 @@ body {
 
 /* =============================ellipse=============================== */
 .arrow1 {
-    right: 2%;
-    top: 27%;
+    right: -9%;
+    top: -12%;
+}
+
+.arrow2 {
+    bottom: 15%;
+    left: -10%;
+}
+
+.arrow3 {
+    bottom: 10%;
+    right: -2%;
+}
+.arrow4 {
+    top: -30%;
+    left: 0%;
 }
 
 .btn-started svg path {
@@ -351,6 +376,10 @@ body {
 
 .anime-bounce {
     animation: bounce 1s linear infinite alternate;
+}
+
+.anime-bounce1 {
+    animation: bounce1 2s linear infinite alternate;
 }
 
 .btn-back {
@@ -384,6 +413,18 @@ body {
     50% {
         transform: none;
         animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+@keyframes bounce1 {
+
+    0%,
+    100% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: none;
     }
 }
 
@@ -436,10 +477,6 @@ body {
         --fs-2xl: 46px;
     }
 
-    .box-absolute {
-        position: absolute;
-    }
-
     .max-w-494 {
         max-width: 494px;
     }
@@ -479,12 +516,21 @@ body {
         right: -72px !important;
     }
 
+    .arrow3 {
+        right: -8%;
+    }
+
     .prev-btn {
         top: 50% !important;
         left: -72px !important;
     }
 }
 
+@media (min-width:1600px) {
+    .arrow3 {
+            right: 0%;
+        }
+}
 @media (min-width:1600px) {
     .max-w-1140 {
         max-width: 1320px !important;

@@ -25,7 +25,7 @@ function App() {
         <img src={logo} alt="" width={150} className='anime-bounce' />
         <div className="loader mt-5"></div>
       </div >) : (
-        <div className=' position-relative'>
+        <div className=' position-relative overflow-xclip'>
           <Backtotop />
           < Hero />
           <Section2 />

@@ -1,6 +1,6 @@
 import React from 'react'
 import Commonbtn from '../common/Commonbtn'
-import img from '../assets/images/png/logo.png'
+import img from '../assets/images/webp/logo.webp'
 import ellipse from '../assets/images/png/arrowellipse2.png'
 const Section6 = () => {
     return (

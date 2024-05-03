@@ -9,7 +9,7 @@ import Section6 from './components/Section6';
 import Section7 from './components/Section7';
 import { Footer } from './components/Footer';
 import { useState, useEffect } from 'react';
-import logo from './assets/images/png/logo.png'
+import logo from './assets/images/webp/logo.webp'
 import Backtotop from './components/Backtotop';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
@@ -35,7 +35,7 @@ function App() {
         <img src={logo} alt="" width={150} className='anime-bounce' />
         <div className="loader mt-5"></div>
       </div >) : (
-        <div className=' position-relative overflow-xclip'>
+        <div className=' position-relative overflow-xclip main-body'>
           <Backtotop />
           <Hero />
           <Section2 />

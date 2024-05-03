@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../assets/images/png/manlaptop.png'
+import img from '../assets/images/webp/manlaptop.webp'
 import ellipse from '../assets/images/png/arrowellipse2.png'
 import Commonbtn from '../common/Commonbtn'
 const Section2 = () => {

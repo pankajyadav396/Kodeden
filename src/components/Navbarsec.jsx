@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from '../assets/images/png/logo.png'
+import logo from '../assets/images/webp/logo.webp'
 const Navbarsec = () => {
   const [nav, setNav] = useState(false)
   function show() {
@@ -25,7 +25,7 @@ const Navbarsec = () => {
               <li><a onClick={show} href="#home" className='home fs-sm1 fw-medium ff-jost color-grey lh-24 text-decoration-none list-unstyled'>Home</a></li>
               <li><a onClick={show} href="#aboutus" className='home fs-sm1 fw-medium ff-jost color-grey lh-24 text-decoration-none list-unstyled'>About</a></li>
               <li><a onClick={show} href="#services" className='home fs-sm1 fw-medium ff-jost color-grey lh-24 text-decoration-none list-unstyled'>Program</a></li>
-              <li><a onClick={show} href="#choose" className='home fs-sm1 fw-medium ff-jost color-grey lh-24 text-decoration-none list-unstyled'>How It Works</a></li>
+              <li><a onClick={show} href="#choose" className='home fs-sm1 fw-medium ff-jost color-grey lh-24 text-decoration-none list-unstyled'>How it works</a></li>
               <li><a onClick={show} href="#faqs" className='home fs-sm1 fw-medium ff-jost color-grey lh-24 text-decoration-none list-unstyled'>FAQs</a></li>
               <li onClick={show} className='ms-2 d-sm-none'><button className=' btn-started color-white fw-900 ff-jost fs-sm'>Get Started</button></li>
             </ul>

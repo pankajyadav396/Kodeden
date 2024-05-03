@@ -1,7 +1,7 @@
 import React from 'react'
-import img1 from "../assets/images/png/manlaptop2.png";
-import img2 from "../assets/images/png/goldpotli.png";
-import img3 from "../assets/images/png/gallery.png";
+import img1 from "../assets/images/webp/manlaptop2.webp";
+import img2 from "../assets/images/webp/goldpotli.webp";
+import img3 from "../assets/images/webp/gallery.webp";
 import arrow from '../assets/images/png/arrowellipse3.png'
 
 const Section3 = () => {
@@ -16,13 +16,13 @@ const Section3 = () => {
             title: '02',
             para: 'Build a',
             para1: 'Standout Portfolio',
-            img: img2,
+            img: img3,
         },
         {
             title: '03',
             para: 'Launch ',
             para1: 'Your Tech Career',
-            img: img3,
+            img: img2,
         },
     ]
     return (
@@ -30,11 +30,11 @@ const Section3 = () => {
             <div className=' pt-xl-5 mt-lg-5' id='services'>
                 <div className='pt-5 container max-w-1140 position-relative'>
                     <img src={arrow} alt="img" className=' position-absolute arrow3 d-none d-lg-block' />
-                    <h2 className=' color-lightwhite mt-xl-5 fs-2xl fw-medium ff-jost text-center lh-68'>“From Confused to Coder”: Kodeden's <span className=' d-lg-block'></span> Exclusive 6-Month <span className=' color-gradient'> Software Engineering  </span>Course </h2>
+                    <h2 className=' color-lightwhite mt-xl-5 fs-2xl fw-medium ff-jost text-center lh-68'>“From Confused To Coder”: Kodeden's <span className=' d-lg-block'></span> Exclusive 6-Month <span className=' color-gradient'> Software Engineering  </span>Course </h2>
                     <p className=' color-lightwhite fs-sm1 fw-normal text-center mt-2 ff-jost'>Through twice-weekly live lectures and at-home exercises, you’ll:</p>
                     <p className=' color-grey fs-sm1 fw-normal text-center mb-5 pb-4 ff-jost'>Learn everything you need to know to break into tech from senior engineers with experience at <span className=' d-block'></span> Apple, Amazon, and the DOD. </p>
                     <div className="container max-w-941">
-                        <div className=' row'>
+                        <div className=' row pt-2'>
                             {array.map((e, index) => {
                                 return (
                                     <div data-aos="fade-up" className={`${index == 2 ? "mt-4 mt-lg-0" : ""} && ${index == 1 ? "mt-4 mt-sm-0" : ""} col-lg-4 col-sm-6 col-12`}>
@@ -45,8 +45,8 @@ const Section3 = () => {
                                                 <path d="M14.5085 3.41614L8.87116 6.67088V0.161393L14.5085 3.41614ZM9.4349 3.97988H0.978827V2.8524H9.4349V3.97988Z" fill="#E4E4E4" />
                                             </svg>
                                             </span></p>
-                                            <img src={e.img} alt="dc" className={`${index == 2 ? "mt-2" : ""} img-boxgold anime-bounce1 position-absolute top-0 end-0`} width={132} />
-                                            <img src={e.img} alt="dc" className={`${index == 2 ? " mt-2" : ""}  position-absolute anime-bounce1 top-0 end-0`} width={132} />
+                                            <img src={e.img} alt="dc" className={`${index == 1 ? "mt-2" : ""} img-boxgold anime-bounce1 position-absolute top-0 end-0`} width={132} />
+                                            <img src={e.img} alt="dc" className={`${index == 1 ? " mt-2" : ""}  position-absolute anime-bounce1 top-0 end-0`} width={132} />
                                         </div>
                                     </div>
                                 )

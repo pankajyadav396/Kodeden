@@ -45,22 +45,106 @@ const Section5 = () => {
             name: 'Ross O’Rourke',
             name1: '@Ross O’Rourke',
         },
+        {
+            title: '“Luke O’Malley Tech Lead Agile',
+            title1: 'Onboarding.”',
+            para: 'I highly recommend kody Doherty. I have had the pleasure of working with him on variety of software projects over the past three years and his guidance has been intergral to my personal success. He is a driven, organized engineer who develops inspiring relationships with his students. ',
+            para2: 'Read More...',
+            para3: 'Vitae elit dapibus',
+            img: sliderimg2,
+            name: 'Luke O’Malley',
+            name1: '@Luke O’Malley',
+        },
+        {
+            title: 'Leslie Sage Director of Data Science at DevResults',
+            para: 'I had the pleasure of working with Kolton in 2019. In a team of a dozen people, Kolton stood out for his curiosity and drive. He executed ambitious projects with efficiency and attention to detail. He executed ambitious projects with efficiency and attention to detail.',
+            para2: 'Read More...',
+            para3: 'Vitae elit dapibus',
+            img: sliderimg3,
+            name: 'Leslie Sage',
+            name1: '@Leslie Sage',
+        },
+       
     ]
 
     return (
         <div className="mt-xl-5 pt-lg-5 pt-3 px-3" id="choose">
             <div className="container p-0 max-w-1140 mt-lg-5 pt-md-5 position-relative">
-                <h2 data-aos="fade-up" className="color-lightwhite mt-4 fs-2xl fw-medium text-center text-uppercase  lh-xl1 m-0 pb-5">
+                <h2 data-aos="fade-up" className="color-lightwhite mt-4 fs-2xl fw-medium text-center text-capitalize  lh-xl1 m-0 pb-5">
                     What our <span className="color-gradient">students</span> are saying
                 </h2>
+                <div className=" d-flex justify-content-center gap-4 mb-4 align-items-center">
+                    <button className="bg-transparent prev border-0 hover-scale z-2 prev-btn">
+                        <svg
+                            width="44"
+                            height="44"
+                            viewBox="0 0 44 44"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle cx="22" cy="22" r="22" fill="url(#paint0_linear_2_1773)" />
+                            <path
+                                d="M26.7992 16.0001L20.7992 22.0001L26.7992 28.0001L25.5992 30.4001L17.1992 22.0001L25.5992 13.6001L26.7992 16.0001Z"
+                                fill="#F4F4F4"
+                            />
+                            <defs>
+                                <linearGradient
+                                    id="paint0_linear_2_1773"
+                                    x1="-1.14444e-07"
+                                    y1="1.29412"
+                                    x2="20.5626"
+                                    y2="32.2782"
+                                    gradientUnits="userSpaceOnUse"
+                                >
+                                    <stop stopColor="#FF2801" />
+                                    <stop offset="1" stopColor="#FF6B0A" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </button>
+                    <button className="bg-transparent next border-0 hover-scale z-2 next-btn">
+                        <svg
+                            width="44"
+                            height="44"
+                            viewBox="0 0 44 44"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <circle
+                                cx="22"
+                                cy="22"
+                                r="22"
+                                transform="matrix(-1 0 0 1 44 0)"
+                                fill="url(#paint0_linear_2_1776)"
+                            />
+                            <path
+                                d="M17.2008 16.0001L23.2008 22.0001L17.2008 28.0001L18.4008 30.4001L26.8008 22.0001L18.4008 13.6001L17.2008 16.0001Z"
+                                fill="#F4F4F4"
+                            />
+                            <defs>
+                                <linearGradient
+                                    id="paint0_linear_2_1776"
+                                    x1="-1.14444e-07"
+                                    y1="1.29412"
+                                    x2="20.5626"
+                                    y2="32.2782"
+                                    gradientUnits="userSpaceOnUse"
+                                >
+                                    <stop stopColor="#FF2801" />
+                                    <stop offset="1" stopColor="#FF6B0A" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </button>
+                </div>
                 <Swiper
                     speed={1000}
                     modules={[Navigation]}
                     spaceBetween={24}
                     slidesPerView={1}
                     navigation={{ nextEl: ".next-btn", prevEl: ".prev-btn" }}
-                    onSwiper={(swiper) => console.log(swiper)}
-                    onSlideChange={() => console.log("slide change")}
+                    // onSwiper={(swiper) => console.log(swiper)}
+                    // onSlideChange={() => console.log("slide change")}
                     loop={true}
                     className="pb-5"
                     breakpoints={{
@@ -74,7 +158,7 @@ const Section5 = () => {
                 >
                     {array1.map((even, index) => {
                         return (
-                            <SwiperSlide data-aos="fade-up" className={`${index == 2 ? " px-3" : ""} && ${index == 1 ? " px-xxl-2" : ""} && ${index == 0 ? " px-xl-1 ps=xxl-2" : ""}  slider-card`} >
+                            <SwiperSlide className={`${index == 2 ? " px-3" : ""} && ${index == 1 ? " px-xxl-2" : ""} && ${index == 0 ? " px-xl-1 ps=xxl-2" : ""}  slider-card`} >
                                 <h4 className=" m-0 fw-normal fs-md3 lh-36 text-ellipsis ff-jost color-white">
                                     {even.title}
                                 </h4>
@@ -105,70 +189,9 @@ const Section5 = () => {
                         )
                     })}
                 </Swiper>
-                <button className="bg-transparent prev border-0 hover-scale position-absolute z-2 prev-btn">
-                    <svg
-                        width="44"
-                        height="44"
-                        viewBox="0 0 44 44"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <circle cx="22" cy="22" r="22" fill="url(#paint0_linear_2_1773)" />
-                        <path
-                            d="M26.7992 16.0001L20.7992 22.0001L26.7992 28.0001L25.5992 30.4001L17.1992 22.0001L25.5992 13.6001L26.7992 16.0001Z"
-                            fill="#F4F4F4"
-                        />
-                        <defs>
-                            <linearGradient
-                                id="paint0_linear_2_1773"
-                                x1="-1.14444e-07"
-                                y1="1.29412"
-                                x2="20.5626"
-                                y2="32.2782"
-                                gradientUnits="userSpaceOnUse"
-                            >
-                                <stop stop-color="#FF2801" />
-                                <stop offset="1" stop-color="#FF6B0A" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </button>
-                <button className="bg-transparent next border-0 hover-scale position-absolute z-2 next-btn">
-                    <svg
-                        width="44"
-                        height="44"
-                        viewBox="0 0 44 44"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                    >
-                        <circle
-                            cx="22"
-                            cy="22"
-                            r="22"
-                            transform="matrix(-1 0 0 1 44 0)"
-                            fill="url(#paint0_linear_2_1776)"
-                        />
-                        <path
-                            d="M17.2008 16.0001L23.2008 22.0001L17.2008 28.0001L18.4008 30.4001L26.8008 22.0001L18.4008 13.6001L17.2008 16.0001Z"
-                            fill="#F4F4F4"
-                        />
-                        <defs>
-                            <linearGradient
-                                id="paint0_linear_2_1776"
-                                x1="-1.14444e-07"
-                                y1="1.29412"
-                                x2="20.5626"
-                                y2="32.2782"
-                                gradientUnits="userSpaceOnUse"
-                            >
-                                <stop stop-color="#FF2801" />
-                                <stop offset="1" stop-color="#FF6B0A" />
-                            </linearGradient>
-                        </defs>
-                    </svg>
-                </button>
-                <div className=" text-center pt-3"><Commonbtn /></div>
+
             </div>
+            <div className=" text-center mt-sm-3"><Commonbtn /></div>
         </div>
     );
 }

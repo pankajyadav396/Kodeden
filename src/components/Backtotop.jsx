@@ -27,7 +27,7 @@ const Backtotop = () => {
         <>
             <button
                 className={`${Visible ? 'opacity-100' : 'opacity-0'
-                    } position-fixed btn-back p-2 bg-gradient`}
+                    } position-fixed btn-back border-0 p-2 bg-gradient`}
                 onClick={scrollToTop}
             >
                 <span>

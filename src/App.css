@@ -226,7 +226,7 @@ body {
 }
 
 .box-absolute {
-    top: 32%;
+    top: 38%;
     transition: all .3s;
     left: -30px !important;
 }
@@ -488,6 +488,10 @@ body {
     .max-w-494 {
         max-width: 494px;
     }
+
+    .max-w-474 {
+        max-width: 474px;
+    }
 }
 
 @media (min-width:992px) {
@@ -508,7 +512,11 @@ body {
     }
 
     .player {
-        height: 496px !important;
+        height: 476px !important;
+    }
+
+    .max-w-488 {
+        max-width: 488px;
     }
 }
 
@@ -549,6 +557,10 @@ body {
 
     .player {
         height: 580px !important;
+    }
+
+    .max-w-474 {
+        max-width: 574px;
     }
 }
 

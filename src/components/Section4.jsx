@@ -5,9 +5,9 @@ const Section4 = () => {
         <>
             <div className=' pt-lg-5 mt-xl-5' id='faqs'>
                 <div className=' container mt-5 pt-sm-5 pt-3 max-w-1140'>
-                    <div className=' row pt-4 justify-content-lg-around align-items-center'>
-                        <div data-aos="fade-up" className=' col-lg-5 mx-auto col-md-6 col-sm-9 col-11'>
-                            <img src={img} alt="ig" className=' w-100' />
+                    <div className=' row pt-3 justify-content-lg-around align-items-center'>
+                        <div data-aos="fade-up" className=' col-lg-6 mx-auto col-md-6 col-sm-9 col-11'>
+                            <img src={img} alt="img" className=' w-100 max-w-488' />
                         </div>
                         <div data-aos="fade-up" className="col-lg-6 mx-auto col-md-11 mt-5 mt-lg-0 d-flex align-items-center justify-content-center flex-column">
                             <div className=' d-flex d-lg-block align-items-center justify-content-center flex-column'>

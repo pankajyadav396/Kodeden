@@ -9,8 +9,8 @@ const Section7 = () => {
                     <img src={arrow} alt="img" className=' position-absolute end-0 bottom-0 d-none d-md-block' />
                     <h2 data-aos="fade-up" className=' color-lightwhite fs-2xl pb-2 fw-medium ff-jost lh-68 text-center'>Who Are <span className=' color-gradient'>We</span>?</h2>
                     <div className=' row mt-5 pt-3 justify-content-between align-items-center'>
-                        <div data-aos="fade-up" className="col-lg-5 col-md-6 col-sm-10 mx-auto">
-                            <img src={img} alt="img" className=' w-100' />
+                        <div data-aos="fade-up" className="col-md-6 col-sm-10 mx-auto">
+                            <img src={img} alt="img" className=' w-100 max-w-474' />
                         </div>
                         <div data-aos="fade-up" className="col-md-6 col-sm-10 mt-4 mx-auto mt-md-0 d-flex align-items-center justify-content-center">
                             <div>

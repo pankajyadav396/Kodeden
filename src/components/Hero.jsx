@@ -10,7 +10,7 @@ const Hero = () => {
     <>
       <div className=' d-flex bg-header flex-column position-relative'>
         <Navbarsec />
-        <div className=' container-md max-w-1140 pt-5'>
+        <div className=' container-md max-w-1140 pt-5 mt-3'>
           <h1 data-aos="fade-up" data-aos-delay="100" className=' ff-jost fw-semibold fs-xl mx-auto color-white text-center mb-3 max-w-1089 text-uppercase'>Start the Mini-Course: <span className=' color-gradient'>Rapidly Learning New Technical Skills</span> </h1>
           <p data-aos="fade-up" data-aos-delay="100" className=' text-uppercase fs-md3 fw-semibold ff-jost color-white pt-1 text-center'>Learn All The Skills You Need To Become a <span className=' d-sm-block color-lightwhite'> Software Engineer!</span></p>
           {/* <ReactPlayer

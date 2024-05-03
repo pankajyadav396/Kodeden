@@ -189,7 +189,6 @@ const Section5 = () => {
                         )
                     })}
                 </Swiper>
-
             </div>
             <div className=" text-center mt-sm-3"><Commonbtn /></div>
         </div>
